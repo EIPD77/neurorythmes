@@ -1,0 +1,25 @@
+{
+  "name": "neurorythmes",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "elizabeth pacquit-davis",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-rss": "2.0.4",
+    "clean": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0"
+  }
+}

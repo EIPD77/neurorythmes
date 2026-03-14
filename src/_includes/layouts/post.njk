@@ -1,0 +1,27 @@
+---
+layout: base.njk
+---
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+    {% if date %}
+      <p class="meta">{{ date | readableDate }}</p>
+    {% endif %}
+    {% if content_warning %}
+      <p class="note"><strong>Note :</strong> {{ content_warning }}</p>
+    {% endif %}
+  </header>
+
+  {{ content | safe }}
+
+  {% if tags %}
+    <footer class="tags">
+      <h2 class="sr-only">Tags</h2>
+      <ul>
+        {% for tag in tags %}
+          <li><a href="/tags/{{ tag | slug }}/">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    </footer>
+  {% endif %}
+</article>
