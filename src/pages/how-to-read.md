@@ -1,6 +1,6 @@
 ---
 title: "How to read NeuroRythmes"
-layout: "page"
+layout: "layouts/page"
 ---
 Welcome 🌿
 
