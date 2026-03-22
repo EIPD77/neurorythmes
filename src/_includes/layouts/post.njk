@@ -2,7 +2,15 @@
 layout: base.njk
 ---
 <article>
-  {% include "partials/header/index.njk" %}
+  <header>
+    <h1>{{ title }}</h1>
+    {% if date %}
+      <p class="meta">{{ date | readableDate }}</p>
+    {% endif %}
+    {% if content_warning %}
+      <p class="note"><strong>Note :</strong> {{ content_warning }}</p>
+    {% endif %}
+  </header>
 
   {{ content | safe }}
 

@@ -29,7 +29,7 @@ export default function (eleventyConfig) {
     dir: {
       input: "src",
       output: "public",
-      includes: "_includes/layouts"
+      includes: "_includes/"
     },
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk"
